@@ -1,0 +1,406 @@
+/********* GENERALES *****************************************************************/
+*{
+    font-family: 'Chakra Petch', sans-serif;
+}
+body{
+    margin: 0;
+}
+.night{
+    background-color: #110038;
+}
+nav{
+    height: 24px;
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 0 0 #110038;
+    margin: 0.1% 0.1% 0 0.1%;
+}
+nav p{
+    margin-left: 0.5%;
+}
+section{
+    margin: 30px auto;
+    width: 82%;
+}
+a{
+    text-decoration: none;
+    color: #110038;
+}
+.line{
+    text-decoration: underline;
+}
+
+.window-nav{
+    margin: 0 0.3% 0 0.3%;
+    box-shadow: none;
+    font-weight: 700;
+    transform: translateY(9%);
+}
+.marco{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    margin-bottom: 20px;
+    margin-top: 64px;
+}
+.marco p{
+    margin-left: 7px;
+}
+/********** HOME PAGE ****************************************************************/
+section.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.home{
+    cursor: pointer;
+}
+div.opciones{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+.opciones .marg{
+    margin-left: 16px;
+}
+.opciones a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 134px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.hvr:active{
+    color: #B4B4B4;
+}
+.opciones label:last-child{
+    width: 80px;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 16px;
+}
+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 131px;
+    height: 36px;
+}
+#theme{
+    display: none;
+}
+#theme + label{
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+}
+ul{
+    position: absolute;
+    flex-direction: column;
+    top: 30px;
+    left: 152px;
+    z-index: 1;
+    padding: 0;
+    width: 171px;
+    align-items: center;
+}
+li{
+    margin: 2.5% 0.7%;
+    width: 145px;
+}
+li:first-of-type button:first-of-type{
+    cursor: pointer;
+    width: 100%;
+    height: 36px;
+    margin-top: 5%;
+}
+li:last-of-type button:last-of-type{
+    cursor: pointer;
+    width: 100%;
+    height: 36px;
+    margin-bottom: 5%;
+}
+div.opciones ul{
+    list-style: none;
+    display: none;
+}
+#theme:checked ~ ul{
+    display: flex;
+}
+div.buscador{
+    height: 99px;
+}
+.ventana .divseparador{
+    display: flex;
+    justify-content: space-between;
+}
+.i-text{
+    margin: 12px;
+    height: 48px;
+    width: 92%;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-left: 16px;
+}
+.btnBuscar{
+    margin: auto 1%;
+    height: 36px;
+    width: 102px;
+}
+.btnBuscar:enabled{
+    cursor: pointer;
+}
+.btnBuscar img{
+    margin-right: 10px;
+    vertical-align: sub;
+}
+.historial{
+    height: 46px;
+    overflow: hidden;
+}
+.btnHistorial{
+    cursor: pointer;
+    margin-top: 12px;
+    margin-left: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 34px;
+    color: #FFFFFF;
+}
+div#cont-suge{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 12px));
+    grid-template-rows: calc((100vw - 240px)*0.25 - 12px);
+    grid-gap: 16px;
+}
+div.sugerido{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 2px;
+}
+
+.sugerido nav{
+    margin: 0 -2px;
+    padding-left: 2px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset -2px 0px 0 0 #B4B4B4, inset 2px -2px 0 0 #FFFFFF;
+}
+.sugerido p {
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sugerido button{
+    color: #F0F0F0;
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    width: 81px;
+    height: 34px;
+    cursor: pointer;
+}
+
+div.cont-gifs{
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 12px));
+    grid-template-rows: repeat(3, calc((100vw - 240px)*0.25 - 12px));
+    grid-gap: 16px;
+}
+.p-relative{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.pie, .pie-rtdo{
+    display: none;
+}
+.p-relative:hover .pie, .p-relative:hover .pie-rtdo{
+    width: 98.7%;
+    height: 25px;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-164%);
+    left: 2px;
+    display: flex;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.p-relative:hover{
+    padding: 2px;
+    box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+#misGuifos .cont-gifs{
+    grid-template-rows: repeat(1, calc(-72px + 25vw));
+}
+div.gif{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/************** UPLOAD PAGE *********************************************************/
+.arrow{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.up-info{
+    width: 684px;
+    height: 386px;
+    margin: 0 auto;
+}
+.agrandar{
+    padding: 6.8px 36px;
+}
+.grilla{
+    margin-left: 25px;
+    display: grid;
+    grid-template-columns: 5% 85%;
+    column-gap: 10px;
+}
+.grilla img{
+    width: 32px;
+    height: 32px;
+    margin-top: 32px;
+}
+.negrita{
+    font-weight: 700;
+}
+.grilla p{
+    margin-top: 30px;
+}
+.div-botones{
+    grid-column: 1/3;
+    text-align: end;
+}
+.up-btn{
+    width: 144px;
+    height: 36px;
+    cursor: pointer;
+}
+.cam-w{
+    width: 860px;
+    height: 548px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.cam-w label, .cam-w label:hover{
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 36px;
+    height: 34px;
+}
+.cam-w div{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+video{
+    margin: 10px auto;
+    width: 832px;
+    height: 434px;
+    border: 1px solid;
+}
+.btnListo{
+    color: #ffffff;
+    background: #FF6161;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #993A3A, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+}
+.btnListo:hover{
+    background-color: #993A3A;
+}
+.box-subida{
+    margin: 10px auto;
+    width: 832px;
+    height: 434px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+    /* si rompi algo fue esto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#subiendo .box-subida p:last-child{
+    margin-bottom: 150px;
+}
+#myGif{
+    margin: auto;
+    width: 830px;
+    height: 432px;
+}
+.box-subida img{
+    width: 48px;
+    height: 48px;
+}
+.mid-line{
+    text-decoration: line-through;
+}
+.box-exito{
+    margin-top: 29px;
+    margin-left: 27px;
+    width: 371px;
+    height: 196px;
+    background: #FFFFFF;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+.box-exito img{
+    transform: translateX(2px);
+    height: inherit;
+    width: max-content;
+}
+.w-exito{
+    margin: 0 auto;
+    width: 721px;
+    height: 391px;
+}
+.cont-exito{
+    margin: 10px auto;
+    display: flex;
+}
+.div-exito{
+    margin-right: 46px;
+    margin-left: 27px;
+    display: flex;
+    flex-direction: column;
+}
+.div-exito p{
+    font-weight: 700;
+    margin-top: 49px;
+}
+.div-exito button{
+    margin-top: 14px;
+    width: 256px;
+    height: 36px;
+}
+.trasladar{
+    transform: translate(565px, 50px);
+    display: inline-flex;
+}

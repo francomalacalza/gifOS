@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link id="linkCSS" rel="stylesheet" href="styles/day-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet"> 
+    <title>Creando gif</title>
+</head>
+<body>
+    <nav><p>!Bienvenidos/as a Guifos.com! ------Donde los gifs estan.////// Numero de visitas: 12.765.803</p></nav>
+    <section>
+        <img src="assets/arrow.svg" alt="flecha" class="arrow">
+        <a href="index.html"><img src="assets/gifOF_logo.png" id="logo" alt="Logo"></a>
+    </section>
+
+    <section id="esconder">
+        <div class="ventana up-info">
+            <nav class="window-nav"><p>Crear Guifos</p></nav>
+            <div class="grilla">
+                <div>
+                    <img src="assets/windowimg.png" alt="icono ventana">
+                </div>
+                <div>
+                    <p class="negrita"> Aquí podrás crear tus propios guifos</p>
+                       <p>Crear tu guifo es muy fácil, graba cualquier imagen con tu cámara y obtén guifos
+                        personalizados. Los pasos para crear tu <span class="negrita">guifo</span> son: <br><br>
+                        <span class="negrita">1)</span> Dar permisos de acceso a la cámara (sólo por el tiempo de uso) <br>
+                        <span class="negrita">2)</span> Capturar tu momento guifo <br>
+                        <span class="negrita">3)</span> Revisar el momento <br>
+                        <span class="negrita">4)</span> Listo para subir y compartir! <br><br>
+                        Quieres comenzar a crear tu <span class="negrita">guifo</span> ahora?
+                    </p>
+                </div>
+                <div class="div-botones">
+                    <a href="index.html" class="borde secundario agrandar" id="cancel">Cancelar</a>
+                    <button class="borde up-btn" id="openCam">Comenzar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="chequeo" hidden>
+        <div class="ventana cam-w">
+            <nav class="window-nav"><p>Un chequeo antes de epezar</p></nav>
+            <video></video>
+            <div>
+                <label for="btnCapturar" class="borde camarita"></label>
+                <button class="borde up-btn" id="btnCapturar">Capturar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="capturando" hidden>
+        <div class="ventana cam-w">
+            <nav class="window-nav"><p>Capturando tu guifo</p></nav>
+            <video id="grabando"></video>
+            <div class="div-botones">
+                <label for="btnListo" class="btnListo"></label>
+                <button class="up-btn btnListo" id="btnListo">Listo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="vista" hidden>
+        <div class="ventana cam-w">
+            <nav class="window-nav"><p>Vista previa</p></nav>
+            <div class="box-subida">
+                <img src="assets/chauerror.png" id="myGif" alt="nuevo gif">
+            </div>
+            <div class="div-botones">
+                <button class="borde up-btn secundario" id="btnRepetir">Repetir Captura</button>
+                <button class="borde up-btn" id="btnSubir">Subir Guifo</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="subiendo" hidden>
+        <div class="ventana cam-w">
+            <nav class="window-nav"><p>Subiendo Guifo</p></nav>
+            <div class="box-subida">
+                <img src="assets/globe_img.png" alt="globo">
+                <p class="negrita">Estamos subiendo tu guifo..</p>
+                <p>Tiempo restante: <span class="mid-line">38 años</span> algunos minutos</p>
+            </div>
+            <div class="div-botones">
+                <button class="borde up-btn secundario" id="cancelaSubida">Cancelar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="exito" hidden>
+        <div class="ventana w-exito">
+            <nav class="window-nav"><p>Guifo Subido Con Exito</p></nav>
+            <div class="cont-exito">
+                <div class="box-exito">
+                    <img src="assets/chauerror.png" id="nuevoGif" alt="gif nuevo">
+                </div>
+                <div class="div-exito">
+                    <p>Guifo creado con exito</p>
+                    <button class="borde secundario" id="btnCopiar">Copiar enlace guifo</button>
+                    <button class="borde secundario" id="btnDescargar">Descargar guifo</button>
+                </div>
+            </div>
+            <a href="index.html" class="borde trasladar agrandar">Listo</a>
+        </div>
+    </section>
+
+    <section id="misGuifos">
+        <div class="marco">
+            <p> Mis guifos</p>
+        </div>
+
+        <div id="cont-misgifs" class="cont-gifs">
+
+        </div>
+    </section>
+
+    <script src="script/upload-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+
+</body>
+</html>

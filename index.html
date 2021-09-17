@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link id="linkCSS" rel="stylesheet" href="styles/day-theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet"> 
+    <title>gifOS</title>
+    <!-- mmQI4GOcW9OJNQWBcB5OrzKrrjDOXBUW -->
+</head>
+<body>
+    <nav><p>!Bienvenidos/as a Guifos.com! ------Donde los gifs estan.////// Numero de visitas: 12.765.803</p></nav>
+    <section class="menu">
+        <div class="home" id="home">
+            <img src="assets/gifOF_logo.png" id="logo" alt="Logo">
+        </div>
+        <div class="opciones">
+            <a href="upload.html" class="borde">Crear Guifos</a>
+            <label class="borde marg">Elegir tema</label>
+            <input type="checkbox" id="theme" class="dropdown">
+            <label for="theme" class="borde"></label>
+            <ul>
+                <li><button id="sd" value="sd">Sailor Day</button></li>
+                <li><button id="sn" value="sn">Sailor Night</button></li>
+            </ul>
+            <label class="hvr" id="btnMisgifos"><span class="line">M</span>is Guifos</label>
+        </div>        
+    </section>
+    <section id="buscador">
+        <div class="ventana buscador">
+            <nav class="window-nav">
+                <p>Buscar</p>
+            </nav>
+            <div class="divseparador">
+                <input type="text" id="busqueda" class="i-text" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                <button class="btnBuscar" id="btnBuscar" disabled><img src="../assets/lupa_inactive.svg" id="lupita" alt="Lupa">Buscar</button>
+            </div>
+        </div>
+
+        <div id="historial" class="historial">
+        <span id="tope"></span>
+        </div>
+    </section>
+
+    <section id="sugerencias">
+        <div class="marco">
+            <p>Hoy te sugerimos</p>
+        </div>
+        <div id="cont-suge">
+        </div>
+    </section>
+
+    <section id="tendencias">
+        <div class="marco">
+            <p>Tendencias</p>
+        </div>
+        <div class="cont-gifs" id="con-tendencias">
+ 
+        </div>
+    </section>
+    
+    <section id="s-busqueda" hidden>
+        <div class="marco" hidden>
+            <p>Resultados de la busqueda</p>
+        </div>
+        <div class="cont-gifs" id="cont-rtdo">
+            
+        </div>
+    </section>
+
+    <section id="misGuifos" hidden>
+        <div class="marco">
+            <p> Mis guifos</p>
+        </div>
+        <div id="cont-misgifs" class="cont-gifs">
+
+        </div>
+    </section>
+    <script src="script/home-script.js"></script>
+</body>
+</html>

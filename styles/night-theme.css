@@ -1,0 +1,111 @@
+body{
+    background-color: #110038;
+}
+nav{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.borde{
+    color: #FFFFFF;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+    font-size: 16px;
+}
+.borde:hover{
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.ventana{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+.marco{
+    background: #FFFAFE;
+    border: 1px solid #2E32FB;
+    box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #110038;
+}
+.hvr:hover{ /*************************************************/
+    border-style: dotted;
+    border: 1px solid #FFFFFF;
+    cursor: pointer;
+}
+.opciones label:last-child{
+    color: #FFFFFF;
+}
+#theme + label{
+    background-image: url(../assets/dropdown.svg); /* cambiar*/
+}
+ul{
+    background: #B4B4B4;
+    box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+li:first-of-type button:first-of-type{
+    background: #CCCCCC;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+li:last-of-type button:last-of-type{
+    color: #FFFFFF;
+    background: #2E32FB;
+    border: 1px solid rgba(51,53,143,0.20);
+    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+.btnBuscar{
+    background: #B4B4B4;
+    border: 1px solid #808080;
+    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+.btnBuscar:enabled{
+    color: #FFFFFF;
+    background: #EE3EFE;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.btnBuscar:enabled:hover{
+    background: #CE36DB;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+}
+.btnHistorial{
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+div.sugerido{
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+.sugerido button{
+    background: #2E32FB;
+    border: 1px solid #4C2F99;
+    box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+.p-relative:hover .pie, .p-relative:hover .pie-rtdo{
+    background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+.cont-gifs .gif:hover, .cont-gifs .gif-rtdo:hover{
+    box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.secundario{
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #110038;
+}
+.secundario a{
+    color: #FFFFFF;
+    background-color: #110038;
+}
+.secundario:hover{
+    background: #110038;
+    border: 1px solid #B4B4B4;
+    box-shadow: inset -1px -1px 0 0 #5C5C5C, inset 1px 1px 0 0 #FFF4FD;
+}
+.camarita, .camarita:hover{
+    background-image: url(../assets/camera_light.svg);
+}
+label.btnListo{
+    background-image: url(../assets/recording_dark.svg);
+}
+
